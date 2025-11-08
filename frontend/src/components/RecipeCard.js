@@ -77,7 +77,9 @@
 
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Card, CardMedia, CardContent, Typography, Link } from '@mui/material';
+// import { Card, CardMedia, CardContent, Typography, Link } from '@mui/material';
+// Change it to this:
+import { Card, CardMedia, Link } from '@mui/material';
 
 const RecipeCard = ({ recipe }) => {
   // 1. Get the base URL from the environment variable
