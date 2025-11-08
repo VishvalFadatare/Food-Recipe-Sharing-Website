@@ -1,0 +1,7 @@
+  base = "frontend"
+  
+  # This is the build command for your React app
+  command = "npm run build" # (or "yarn build")
+  
+  # This is the folder that gets deployed (relative to the 'base' directory)
+  publish = "build"
