@@ -7,7 +7,7 @@ const RecipeDetails = () => {
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const { id } = useParams(); // Get the ID from the URL
-  const backendUrl = 'http://localhost:5000';
+  const backendUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
   useEffect(() => {
     const fetchRecipe = async () => {
