@@ -36,7 +36,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 const AdminDashboard = () => {
   const [recipes, setRecipes] = useState([]);
-  const [users, setUsers] = useState(0); // Placeholder for user count
+  // const [users, setUsers] = useState(0); // Placeholder for user count
+  // Change it to this:
+const [users] = useState([]);
 
   useEffect(() => {
     // Fetch all recipes using the admin-only route
